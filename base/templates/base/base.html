@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="carlos valdes aravena - curriculum vitae">
+    <meta name="keywords" content="freelance, cv, curriculum, carlos, valdes, aravena, portfolio, creative, modern, laravel, nodejs, php, python">
+    <!-- Page Title -->
+    <title>Carlos Valdés Aravena - {% block title%}{%endblock%}</title>
+    {% load static %}
+    <!-- App compiled styles -->
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/tootik.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/swiper.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/animate.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/colors/light.css'%}">
+    <link rel="stylesheet" href="{% static 'base/css/colors/color1-0487cc.css'%}">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="{% static 'base/images/favicon.png'%}">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|PT+Sans+Narrow:400,700">
+</head>
+<body>
+
+<div class="content">
+    <!-- #LOADER# --> <!-- other loader : http://tobiasahlin.com/spinkit/ -->
+    <div class="loading-overlay">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!-- #MENU# -->
+    <div class="menu">
+        <h2 class="logo">CV</h2>
+        <div class="menu-content">
+            <ul>
+                <li><a class="active" href="#" data-value="about">ACERCA DE</a></li>
+                <li><a href="#" data-value="skills">HABILIDADES</a></li>
+                <li><a href="#" data-value="education">EDUCACIÓN</a></li>
+                <li><a href="#" data-value="experience">EXPERIENCIA</a></li>
+                <li><a href="#" data-value="contact">CONTACTO</a></li>
+                <!-- <li><a href="#" data-value="portfolio">PORTFOLIO</a></li> -->
+                <!-- <li><a href="#" data-value="testimonials">TESTIMONIOS</a></li> -->
+                <!-- <li><a href="#" data-value="interests">INTERESTS</a></li> -->
+                <!-- <li><a href="#" data-value="pricing">PRICING</a></li> -->
+                <!-- <li><a href="#" data-value="blog">BLOG</a></li> -->
+            </ul>
+        </div>
+        <div class="open-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- #SCROLL-TOP# -->
+    {% comment %} <div class="scroll-top" data-tootik="TOP" data-tootik-conf="invert no-arrow no-fading">
+        <i class="fa fa-arrow-up"></i>
+    </div> {% endcomment %}
+    <!-- #CONTAINER# -->
+    <div class="container">
+        {% block content%}{%endblock%}
+    </div>
+</div>
+
+<!-- #JQUERY-PLUGINS# -->
+<script src="{% static 'base/js/jquery.min.js'%}"></script>
+<script src="{% static 'base/js/bootstrap.min.js'%}"></script>
+<script src="{% static 'base/js/jquery.magnific-popup.min.js'%}"></script>
+<script src="{% static 'base/js/swiper.min.js'%}"></script>
+<script src="{% static 'base/js/jquery.easypiechart.min.js'%}"></script>
+<script src="{% static 'base/js/wow.min.js'%}"></script>
+<script src="{% static 'base/js/validator.min.js'%}"></script>
+<script src="{% static 'base/js/form-scripts.js'%}"></script>
+<script src="{% static 'base/js/script.js'%}"></script>
+<script>
+    /**** EasyPieChart Circle Progress ****/
+    $(function() {
+        //circle progress additional skills
+        $('.chart').easyPieChart({
+            barColor: '#757575',
+            trackColor: 'rgba(255,255,255,0)',
+            scaleColor: 'rgba(255,255,255,0)',
+            lineWidth: '10',
+            lineCap: 'square'
+        });
+    });
+</script>
+</body>
+</html>

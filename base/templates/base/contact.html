@@ -1,0 +1,49 @@
+{% extends 'base/base.html'%}
+{% block title %}Contacto{%endblock%}
+{% block content%}
+{% load static%}
+<!-- #CONTACT_US# -->
+<section id="contact-us" class="section section-contact-us wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">CONTACTO</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="form-content">
+                <h3>HAS TU CONSULTA</h3>
+                <form id="contactForm" data-toggle="validator">
+                    <input type="text" id="name" placeholder="Nombre" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Mensaje" required></textarea>
+                    <input type="submit" id="form-submit" value="ENVIAR">
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="info-content">
+                <h3>DATOS DE CONTACTO</h3>
+                <div class="address">
+                    <span class="info-icon"><i class="fa fa-map-marker"></i></span>
+                    <span class="info-text">Santiago, Estación Central</span>
+                </div>
+                <div class="email">
+                    <span class="info-icon"><i class="fa fa-envelope"></i></span>
+                    <span class="info-text">valdescarlos17@gmail.com</span>
+                </div>
+                <div class="telephone">
+                    <span class="info-icon"><i class="fa fa-phone"></i></span>
+                    <span class="info-text">+569 43425842</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-links">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+</section>
+{%endblock%}

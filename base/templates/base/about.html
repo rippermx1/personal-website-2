@@ -1,0 +1,84 @@
+{%extends 'base/base.html'%}
+{% block title%}Acerca de{%endblock%}
+{%block content%}
+{%load static%}
+<!-- #ABOUT# -->
+<section id="about" class="section section-about wow fadeInUp">
+    <div class="profile">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="photo-profile">
+                    <img src="{%static 'base/images/front.jpg'%}" alt="Carlos Enrique Valdés Aravena">
+                </div>
+                <a href="cv/cv.pdf" target="cv">
+                    <div class="download-resume">
+                        <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                        <span class="text-download">DESCARGAR CV</span>
+                    </div>
+                </a>
+                <div class="available">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <span class="text-available">Disponible como Freelance</span>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="info-profile">
+                    <h2><span>HOLA, SOY</span> CARLOS VALDÉS</h2>
+                    <h3>Desarrollador Full-Stack</h3>
+                    <p>
+                        Profesional apasionado por el aprendizaje continuo de nuevas tecnologías,
+                        responsable, comprometido y proactivo con los nuevos desafios tecnologicos
+                        que proporcione un nuevo proyecto.
+                        Estructurado y partidario del uso de metodologías ágiles (Scrum o XP)
+                        como base para el desarrollo de un producto de calidad y escalable.
+                        Amante de la programación orientada a objetos y a su uso en arquitetura de software.
+                        Programador políglota capaz de adaptarme rapido a nuevos lenguajes de programación.
+                        Con aproximadamente 2 años de experiencia.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="ul-info">
+                                <li class="li-info">
+                                    <span class="title-info">Edad</span>
+                                    <span class="info">24</span>
+                                </li>
+                                <li class="li-info">
+                                    <span class="title-info">Dirección</span>
+                                    <span class="info">110, Estación Central, Santiago</span>
+                                </li>
+                                <li class="li-info">
+                                    <span class="title-info">Email</span>
+                                    <span class="info">valdescarlos17@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="ul-info">
+                                <li class="li-info">
+                                    <span class="title-info">Teléfono</span>
+                                    <span class="info">+569 43425842</span>
+                                </li>
+                                <li class="li-info">
+                                    <span class="title-info">Nacionalidad</span>
+                                    <span class="info">Chileno</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12">
+                            <span class="title-links">Redes Sociales</span>
+                            <ul class="ul-social-links">
+                                <li class="li-social-links">
+                                    <a href="#" data-tootik="Facebook" data-tootik-conf="square"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="li-social-links">
+                                    <a href="#" data-tootik="Linkedin" data-tootik-conf="square"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

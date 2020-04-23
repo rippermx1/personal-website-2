@@ -1,0 +1,405 @@
+{% extends 'base/base.html'%}
+{% block title %} Home {% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- #PORTFOLIO# -->
+<!-- <section id="portfolio" class="section section-portfolio wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">PORTFOLIO</h2>
+    </div>
+    <div class="filter-portfolio">
+        <ul>
+            <li class="active filter" data-filter="all">All</li>
+            <li class="filter" data-filter=".term1">Web Design</li>
+            <li class="filter" data-filter=".term2">Photography</li>
+            <li class="filter" data-filter=".term3">Development</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="item-portfolio term3">
+                <div class="item-overlay">
+                    <div class="item-content">
+                        <span class="icon-search">
+                            <a class="work-popup" href="http://placehold.it/600x600" data-group="1"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                        <span class="icon-plus">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </span>
+                        <h3>AWESOME TITLE PORTFOLIO</h3>
+                    </div>
+                </div>
+                <img src="http://placehold.it/303x303" alt="">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="item-portfolio term1">
+                <div class="item-overlay">
+                    <div class="item-content">
+                        <span class="icon-search">
+                            <a class="work-popup" href="http://placehold.it/600x600" data-group="1"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                        <span class="icon-plus">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </span>
+                        <h3>AWESOME TITLE PORTFOLIO</h3>
+                    </div>
+                </div>
+                <img src="http://placehold.it/303x303" alt="">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="item-portfolio term2">
+                <div class="item-overlay">
+                    <div class="item-content">
+                        <span class="icon-search">
+                            <a class="work-popup" href="http://placehold.it/600x600" data-group="1"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                        <span class="icon-plus">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </span>
+                        <h3>AWESOME TITLE PORTFOLIO</h3>
+                    </div>
+                </div>
+                <img src="http://placehold.it/303x303" alt="">
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-sm-4">
+            <div class="item-portfolio term2">
+                <div class="item-overlay">
+                    <div class="item-content">
+                        <span class="icon-search">
+                            <a class="work-popup" href="http://placehold.it/600x600" data-group="1"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                        <span class="icon-plus">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </span>
+                        <h3>AWESOME TITLE PORTFOLIO</h3>
+                    </div>
+                </div>
+                <img src="http://placehold.it/303x303" alt="">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="item-portfolio term1">
+                <div class="item-overlay">
+                    <div class="item-content">
+                        <span class="icon-search">
+                            <a class="work-popup" href="http://placehold.it/600x600" data-group="1"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                        <span class="icon-plus">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </span>
+                        <h3>AWESOME TITLE PORTFOLIO</h3>
+                    </div>
+                </div>
+                <img src="http://placehold.it/303x303" alt="">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="item-portfolio term3">
+                <div class="item-overlay">
+                    <div class="item-content">
+                        <span class="icon-search">
+                            <a class="work-popup" href="http://placehold.it/600x600" data-group="1"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                        <span class="icon-plus">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </span>
+                        <h3>AWESOME TITLE PORTFOLIO</h3>
+                    </div>
+                </div>
+                <img src="http://placehold.it/303x303" alt="">
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section> -->
+<!-- #PRICING# -->
+<!-- <section id="pricing" class="section section-pricing wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">PRICING</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="pricing-content">
+                <div class="pricing-title">
+                    <h3>STARTER</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="dolar">$</span>
+                    <span class="number">49</span>
+                    <span class="mo">/mo</span>
+                </div>
+                <div class="pricing-detail">
+                    <div class="line-detail">
+                        <span>1TB Disk Space</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>10 Limites Project</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>Responsive Page</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>Free Hosting</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>24/7 Support</span>
+                        <span class="new">NEW</span>
+                    </div>
+                </div>
+                <div class="pricing-buy">
+                    <a href="#"><h3>BUY NOW</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="pricing-content">
+                <div class="most-populaire">
+                    <span>MOST POPULAIRE !</span>
+                </div>
+                <div class="pricing-title">
+                    <h3 class="h3-most-populaire">STANDARD</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="dolar">$</span>
+                    <span class="number">99</span>
+                    <span class="mo">/mo</span>
+                </div>
+                <div class="pricing-detail">
+                    <div class="line-detail">
+                        <span>Unlimited Disk Space</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>30 Limites Project</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>Responsive Page</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>Free Hosting</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="pricing-buy">
+                    <a href="#"><h3>BUY NOW</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="pricing-content">
+                <div class="pricing-title">
+                    <h3>PREMIUM</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="dolar">$</span>
+                    <span class="number">399</span>
+                    <span class="mo">/mo</span>
+                </div>
+                <div class="pricing-detail">
+                    <div class="line-detail">
+                        <span>Unlimited Disk Space</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>Unlimited Project</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>Responsive Page</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>Free Hosting</span>
+                    </div>
+                    <div class="line-detail">
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="pricing-buy">
+                    <a href="#"><h3>BUY NOW</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- #TESTIMONIALS# -->
+<!-- <section id="testimonials" class="section section-testimonials wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">TESTIMONIALS</h2>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="personal-info">
+                    <img src="http://placehold.it/103x105" alt="">
+                    <h3>Chris Smith</h3>
+                    <span>Product Manager</span>
+                </div>
+                <div class="personal-text">
+                <p><i class="fa fa-quote-left"></i>Phasellus turpis lacus, convallis at odio ac, mattis condimentum dolor. In hac habitasse platea dictumst. Fusce eros felis, commodo eget lacus.<i class="fa fa-quote-right"></i></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="personal-info">
+                    <img src="http://placehold.it/103x105" alt="">
+                    <h3>Chris Smith</h3>
+                    <span>Product Manager</span>
+                </div>
+                <div class="personal-text">
+                <p><i class="fa fa-quote-left"></i>Aenean commodo pharetra leo, sed consequat sapien eleifend non. Nunc varius malesuada justo in lacinia. Curabitur eget mauris quis quam.<i class="fa fa-quote-right"></i></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="personal-info">
+                    <img src="http://placehold.it/103x105" alt="">
+                    <h3>Chris Smith</h3>
+                    <span>Product Manager</span>
+                </div>
+                <div class="personal-text">
+                    <p><i class="fa fa-quote-left"></i>Aliquam accumsan, est id vestibulum commodo, massa eros consequat velit, sed pulvinar diam est non purus. Donec quis sapien nec interdum.<i class="fa fa-quote-right"></i></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="personal-info">
+                    <img src="http://placehold.it/103x105" alt="">
+                    <h3>Chris Smith</h3>
+                    <span>Product Manager</span>
+                </div>
+                <div class="personal-text">
+                <p><i class="fa fa-quote-left"></i>Morbi gravida lorem a odio tristique auctor. Praesent gravida ultricies nisi ut tempus. Quisque accumsan leo facilisis velit iaculis egestas.<i class="fa fa-quote-right"></i></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="personal-info">
+                    <img src="http://placehold.it/103x105" alt="">
+                    <h3>Chris Smith</h3>
+                    <span>Product Manager</span>
+                </div>
+                <div class="personal-text">
+                <p><i class="fa fa-quote-left"></i>Sed et maximus magna, et finibus tellus. Pellentesque eleifend tempus sodales. Nunc risus nisi, hendrerit nec dictum et, accumsan eget libero.<i class="fa fa-quote-right"></i></p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="personal-info">
+                    <img src="http://placehold.it/103x105" alt="">
+                    <h3>Chris Smith</h3>
+                    <span>Product Manager</span>
+                </div>
+                <div class="personal-text">
+                <p><i class="fa fa-quote-left"></i>Pellentesque in elit sed magna imperdiet finibus sed sed erat. Curabitur laoreet feugiat ligula, quis feugiat nibh rhoncus et. Nam id leo.<i class="fa fa-quote-right"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+    </div>
+</section> -->
+<!-- #INTERESTS# -->
+<!-- <section id="interests" class="section section-interests wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">INTERESTS</h2>
+    </div>
+    <div class="text-interests">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/travel_icon.png" alt="Travel">
+                </div>
+                <h4>Travel</h4>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/music_icon.png" alt="Music">
+                </div>
+                <h4>Music</h4>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/gaming_icon.png" alt="Gaming">
+                </div>
+                <h4>Gaming</h4>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/swiming_icon.png" alt="Swiming">
+                </div>
+                <h4>Swiming</h4>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/movies_icon.png" alt="Movies">
+                </div>
+                <h4>Movies</h4>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/shopping_icon.png" alt="Shopping">
+                </div>
+                <h4>Shopping</h4>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/bicycling_icon.png" alt="Bicycling">
+                </div>
+                <h4>Bicycling</h4>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="images/interests/cooking_icon.png" alt="Cooking">
+                </div>
+                <h4>Cooking</h4>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- #BLOG# -->
+<!-- <section id="blog" class="section section-blog wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">BLOG</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="blog-content">
+                <img src="http://placehold.it/470x300" alt="">
+                <div class="blog-detail">
+                    <h4><a href="#">PHOTO</a> / <a href="#">DESIGN</a> / <a href="#">DEV</a></h4>
+                    <h3><a href="single-blog.html">HERE GOES AN AWESOME BLOG TITLE</a></h3>
+                    <ul class="ul-detail">
+                        <li><i class="fa fa-user-o"></i>Robert Smith</li>
+                        <li><i class="fa fa-calendar-check-o"></i>Nov 12</li>
+                        <li><i class="fa fa-comments-o"></i>46</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <a href="single-blog.html"><span class="read-more">READ MORE</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="blog-content">
+                <img src="http://placehold.it/470x300" alt="">
+                <div class="blog-detail">
+                    <h4><a href="#">PHOTO</a> / <a href="#">DESIGN</a> / <a href="#">DEV</a></h4>
+                    <h3><a href="single-blog.html">HERE GOES AN AWESOME BLOG TITLE</a></h3>
+                    <ul class="ul-detail">
+                        <li><i class="fa fa-user-o"></i>Robert Smith</li>
+                        <li><i class="fa fa-calendar-check-o"></i>Nov 12</li>
+                        <li><i class="fa fa-comments-o"></i>46</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    <a href="single-blog.html"><span class="read-more">READ MORE</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-more">
+        <a href="more-blog.html"><span>LOAD MORE</span></a>
+    </div>
+</section> -->
+
+{% endblock %}
