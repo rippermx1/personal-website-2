@@ -1,0 +1,32 @@
+{%extends 'base/base.html'%}
+{%block title%}Experiencia{%endblock%}
+{%block content%}
+{%load static%}
+<!-- #EXPERIENCE# -->
+<section id="experience" class="section section-experience wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">EXPERIENCIA</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+							<span class="icon-experience">
+								<i class="fa fa-briefcase"></i>
+							</span>
+            <div class="all-experience">
+                {% for experience in experiences reversed%}
+                    <!-- single experience -->
+                    <div class="experience-content">
+                        <span class="period-experience">{{experience.begin_date}} - {{experience.end_date}}</span>
+                        <h3 class="specialty-name">{{experience.role}}</h3>
+                        <h3 class="company-name">{{experience.company}}</h3>
+                        <p class="prg-experience">
+                            {{experience.description}}
+                        </p>
+                    </div>
+                    <!-- / single experience -->
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}
