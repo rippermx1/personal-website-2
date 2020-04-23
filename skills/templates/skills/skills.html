@@ -1,0 +1,62 @@
+{% extends 'base/base.html'%}
+{% block title %} Habilidades {% endblock %}
+{% block content%}
+{% load static%}
+<!-- #SKILLS# -->
+<section id="skills" class="section section-skills wow fadeInUp" data-wow-offset="40">
+    <div class="header-section">
+        <h2 class="h2-section">HABILIDADES</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="professional-skills">
+                <div class="title-skills">
+                    <h3>HABILIDADES TECNICAS</h3>
+                </div>
+                <!-- single skill -->
+                {% for skill in tech_skills %}
+                <div class="skill">
+                    <div class="title-progress">
+                        <span class="skill-name">{{skill.name}}</span>
+                        <span class="skill-value">{{skill.domain}}%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress2" role="progressbar" aria-valuenow="{{skill.domain}}" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- / single skill -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="additional-skills">
+                <div class="title-skills">
+                    <h3>HABILIDADES BLANDAS</h3>
+                </div>
+                <div class="circle-progress">
+                    <div class="row">
+                        <!-- single circle skill -->
+                        {% for skill in soft_skills %}
+                        <div class="col-sm-4">
+                            <div class="circle">
+                                <div class="chart-percentage">
+                                    <span>{{skill.domain}}%</span>
+                                </div>
+                                <div class="chart" data-percent="{{skill.domain}}">
+                                    <!-- canvas -->
+                                </div>
+                                <div class="name-circle">
+                                    <span>{{skill.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <!-- / single circle skill -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}
